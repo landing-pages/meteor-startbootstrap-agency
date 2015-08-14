@@ -3,7 +3,9 @@
 #
 
 @parseText = (s) ->
-	_.get(LandingPage, s) || _.get(LandingPageDefault, s)
+	text = _.get(LandingPage, s) || _.get(LandingPageDefault, s)
+	return '' unless text
+	text
 
 Template.registerHelper 'lpAppName', ->
 	parseText 'appName'
