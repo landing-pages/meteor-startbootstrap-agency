@@ -9,3 +9,4 @@ This package wraps allows you to use startbootstrap agency te!plate just by inst
 ```
 $ meteor add landing-pages:startbootstrap-agency
 ```
+
