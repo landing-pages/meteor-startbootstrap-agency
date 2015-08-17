@@ -2,7 +2,7 @@
 # Global Template helpers
 #
 
-parseText = (s) ->
+@parseText = (s) ->
   text = ''
   if typeof LandingPage != 'undefined'
     text = _.get(LandingPage, s)
@@ -24,6 +24,20 @@ Template.lpStartBootstrapAgency.rendered = ->
 	$('body').attr('id', 'page-top').addClass('index').scrollspy target: '.navbar-fixed-top'
 
 
+Template.lpStartBootstrapAgency.helpers
+  services: ->
+    parseText("sections.services")
+  portfolio: ->
+    parseText("sections.portfolio")
+  about: ->
+    parseText("sections.about")
+  team: ->
+    parseText("sections.team")
+  clients: ->
+    parseText("sections.clients")
+  contact: ->
+    parseText("sections.contact")
+
 #
 #
 #  Navbar Template
@@ -38,6 +52,18 @@ Template.lpStartBootstrapAgencyNavBar.events
 		event.preventDefault()
 	'click .navbar-collapse ul li a': ->
 		$('.navbar-toggle:visible').click()
+
+Template.lpStartBootstrapAgencyNavBar.helpers
+  navLinks: ->
+    # get sections based on keys and map names with hashtags
+    v = _.map _.keys(parseText("sections")), (v) ->
+      content = parseText("sections.#{v}")
+      {navName: parseText("sections.#{v}").navName, url: "##{v}"} if content.navName
+    
+    # cater for sections without navName
+    _.filter v, (i) ->
+      i != undefined
+
 
 #
 # Header Template
@@ -85,7 +111,7 @@ Template.lpStartBootstrapAgencyPortfolio.helpers
     parseText 'sections.portfolio.works'
   itemClass: ->
     w = parseText("sections.portfolio.works").length
-    w = if w <= 3 then (12 / w) else 3
+    w = if w <= 3 then (12 / w) else 4
     n = parseText("sections.portfolio.noOfColumns") || w
     "col-md-#{n}"
 
@@ -121,7 +147,7 @@ Template.lpStartBootstrapAgencyTeam.helpers
     parseText "sections.team.bottomText"
   itemClass: ->
     w = parseText("sections.team.details").length
-    w = if w <= 4 then (12 / w) else 3
+    w = if w <= 4 then (12 / w) else 4
     n = parseText("sections.team.noOfColumns") || w
     "col-sm-#{n}"
 
@@ -148,20 +174,27 @@ Template.lpStartBootstrapAgencyContactUs.helpers
   'subHeading': ->
     parseText 'sections.contact.subHeading'
 
+
+#
+#
+# footer 
+#
+#
+    
 Template.lpStartBootstrapAgencyFooter.helpers
   facebook: ->
-    parseText 'sections.footer.social.facebook'
+    parseText 'footer.social.facebook'
   twitter: ->
-    parseText 'sections.footer.social.twitter'
+    parseText 'footer.social.twitter'
   linkedIn: ->
-    parseText 'sections.footer.social.linkedIn'
+    parseText 'footer.social.linkedIn'
   github: ->
-    parseText 'sections.footer.social.github'
+    parseText 'footer.social.github'
   googlePlus: ->
-    parseText 'sections.footer.social.googlePlus'
+    parseText 'footer.social.googlePlus'
   year: ->
     moment().year()
   privacy: ->
-    parseText 'sections.footer.privacy'
+    parseText 'footer.privacy'
   terms: ->
-    parseText 'sections.footer.terms'
+    parseText 'footer.terms'

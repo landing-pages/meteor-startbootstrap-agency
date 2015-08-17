@@ -14,6 +14,7 @@ config =
     #
     services:
       visible: true
+      navName: 'services'
       heading: 'Services'
       subHeading: 'Lorem ipsum dolor sit amet consectetur.'
       columns: [
@@ -26,12 +27,17 @@ config =
     # portfolio section
     #
     portfolio:
+      navName: 'portfolio'
       visible: true
       heading: 'Portfolio'
       subHeading: 'Lorem ipsum dolor sit amet consectetur.'
       works: [
         { name: 'Project Name', client: 'Round Icons', category: 'Graphic Design', tagline: 'Lorem ipsum dolor sit amet consectetur.', description: 'Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!', date: 'July 2014', img: '/packages/landing-page_startbootstrap-agency/lib/client/img/portfolio/roundicons.png'}
         { name: 'Project Name', client: 'Startup Framework', category: 'Web Design', tagline: 'Lorem ipsum dolor sit amet consectetur.', description: 'Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!', date: 'July 2014', img: '/packages/landing-page_startbootstrap-agency/lib/client/img/portfolio/startup-framework.png'}
+        { name: 'Project Name', client: 'Treehouse', category: 'Web Design', tagline: 'Lorem ipsum dolor sit amet consectetur.', description: 'Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!', date: 'July 2014', img: '/packages/landing-page_startbootstrap-agency/lib/client/img/portfolio/treehouse.png'}
+        { name: 'Project Name', client: 'Golden', category: 'Web Design', tagline: 'Lorem ipsum dolor sit amet consectetur.', description: 'Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!', date: 'July 2014', img: '/packages/landing-page_startbootstrap-agency/lib/client/img/portfolio/golden.png'}
+        { name: 'Project Name', client: 'Escape', category: 'Web Design', tagline: 'Lorem ipsum dolor sit amet consectetur.', description: 'Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!', date: 'July 2014', img: '/packages/landing-page_startbootstrap-agency/lib/client/img/portfolio/escape.png'}
+        { name: 'Project Name', client: 'Dreams', category: 'Web Design', tagline: 'Lorem ipsum dolor sit amet consectetur.', description: 'Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!', date: 'July 2014', img: '/packages/landing-page_startbootstrap-agency/lib/client/img/portfolio/dreams.png'}
       ]
     
     #
@@ -40,6 +46,7 @@ config =
     #
     about:
       visible: true
+      navName: 'about'
       heading: 'About Us'
       subHeading: 'Lorem ipsum dolor sit amet consectetur.'
       #noOfColumns: 3
@@ -58,6 +65,7 @@ config =
     #
     team:
       visible: true
+      navName: 'team'
       heading: 'The Team'
       subHeading: 'Lorem ipsum dolor sit amet consectetur.'
       details: [
@@ -84,6 +92,7 @@ config =
     # contact us section
     #
     contact:
+      navName: 'contact'
       visible: true
       heading: 'Contact Us'
       subHeading: 'Lorem ipsum dolor sit amet consectetur.'
@@ -92,18 +101,18 @@ config =
     #
     # footer
     #
-    footer:
+  footer:
+    visible: true
+    social:
+      facebook: '#'
+      twitter: '#'
+      linkedIn: '#'
+      # github: '#'
+      # googlePlus: '#'
+    privacy:
       visible: true
-      social:
-        facebook: '#'
-        twitter: '#'
-        linkedIn: '#'
-        # github: '#'
-        # googlePlus: '#'
-      privacy:
-        visible: true
-        url: '#'
-      terms:
-        visible: true
-        url: '#'
+      url: '#'
+    terms:
+      visible: true
+      url: '#'
 LandingPageDefault = LandingPageDefault || config
