@@ -54,7 +54,7 @@ config =
         { date: '2009-2011', title: 'Our Humble Beginnings', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!', img: '/packages/landing-page_startbootstrap-agency/lib/client/img/about/1.jpg'}
         { date: 'MARCH 2011', title: 'An Agency is Born', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!', img: '/packages/landing-page_startbootstrap-agency/lib/client/img/about/2.jpg'}
         { date: 'December 2012', title: 'Transition to Full Service', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!', img: '/packages/landing-page_startbootstrap-agency/lib/client/img/about/3.jpg'}
-        { date: 'July 2014', title: 'Phase Two Expansion', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!', img: '/img/about/4.jpg'}
+        { date: 'July 2014', title: 'Phase Two Expansion', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!', img: '/packages/landing-page_startbootstrap-agency/lib/client/img/about/4.jpg'}
       ]
       lastWords: "Be Part Of Our Story!"
 
@@ -81,10 +81,10 @@ config =
     clients: 
       visible: true
       list: [
-        {imgUrl: 'img/logos/envato.jpg'}
-        {imgUrl: 'img/logos/designmodo.jpg'}
-        {imgUrl: 'img/logos/themeforest.jpg'}
-        {imgUrl: 'img/logos/creative-market.jpg'}
+        {imgUrl: '/packages/landing-page_startbootstrap-agency/lib/client/img/logos/envato.jpg'}
+        {imgUrl: '/packages/landing-page_startbootstrap-agency/lib/client/img/logos/designmodo.jpg'}
+        {imgUrl: '/packages/landing-page_startbootstrap-agency/lib/client/img/logos/themeforest.jpg'}
+        {imgUrl: '/packages/landing-page_startbootstrap-agency/lib/client/img/logos/creative-market.jpg'}
       ]
 
     #

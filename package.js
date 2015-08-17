@@ -23,9 +23,27 @@ Package.onUse(function(api) {
   // add resources
   api.addFiles([
     'lib/client/img/header-bg.jpg',
+    'lib/client/img/portfolio/treehouse.png',
+    'lib/client/img/portfolio/golden.png',
+    'lib/client/img/portfolio/escape.png',
+    'lib/client/img/portfolio/dreams.png',
     'lib/client/img/portfolio/startup-framework.png',
-    'lib/client/img/portfolio/roundicons.png'
-    ], 'client');
+    'lib/client/img/portfolio/roundicons.png',
+
+    'lib/client/img/about/1.jpg',
+    'lib/client/img/about/2.jpg',
+    'lib/client/img/about/3.jpg',
+    'lib/client/img/about/4.jpg',
+    
+    'lib/client/img/team/1.jpg',
+    'lib/client/img/team/2.jpg',
+    'lib/client/img/team/3.jpg',
+    
+    'lib/client/img/logos/envato.jpg',
+    'lib/client/img/logos/designmodo.jpg',
+    'lib/client/img/logos/themeforest.jpg',
+    'lib/client/img/logos/creative-market.jpg'
+  ], 'client');
   api.addFiles(['lib/both/_config/config.coffee']);
 
   // add less files
