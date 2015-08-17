@@ -4,7 +4,7 @@ Package.describe({
   // Brief, one-line summary of the package.
   summary: 'Startbootstrap-agency landing page template for meteor',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/snamoah/meteor-startbootstrap-agency',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -23,6 +23,8 @@ Package.onUse(function(api) {
   // add resources
   api.addFiles([
     'lib/client/img/header-bg.jpg',
+
+    //portfolio images
     'lib/client/img/portfolio/treehouse.png',
     'lib/client/img/portfolio/golden.png',
     'lib/client/img/portfolio/escape.png',
@@ -30,15 +32,19 @@ Package.onUse(function(api) {
     'lib/client/img/portfolio/startup-framework.png',
     'lib/client/img/portfolio/roundicons.png',
 
+    // about section images
     'lib/client/img/about/1.jpg',
     'lib/client/img/about/2.jpg',
     'lib/client/img/about/3.jpg',
     'lib/client/img/about/4.jpg',
     
+
+    // team section images
     'lib/client/img/team/1.jpg',
     'lib/client/img/team/2.jpg',
     'lib/client/img/team/3.jpg',
     
+    // clients section images
     'lib/client/img/logos/envato.jpg',
     'lib/client/img/logos/designmodo.jpg',
     'lib/client/img/logos/themeforest.jpg',
