@@ -10,3 +10,14 @@ This package wraps allows you to use startbootstrap agency te!plate just by inst
 $ meteor add landing-pages:startbootstrap-agency
 ```
 
+### Configuration ###
+
+```coffescript
+
+###
+To configure the template, create a LandingPage object. You can alter any of the following fields or omit as necessary:
+###
+
+@LandingPage =
+
+```
