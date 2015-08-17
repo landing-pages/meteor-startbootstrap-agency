@@ -1,0 +1,51 @@
+
+<template name="lpStartBootstrapAgencyFooter">
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">Copyright &copy; {{lpAppName}} {{year}}</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          {{#if twitter}}
+          <li><a href="{{twitter}}"><i class="fa fa-twitter"></i></a>
+          </li>
+          {{/if}}
+          {{#if facebook}}
+          <li><a href="{{facebook}}"><i class="fa fa-facebook"></i></a>
+          </li>
+          {{/if}}
+          {{#if linkedIn}}
+          <li><a href="{{linkedIn}}"><i class="fa fa-linkedin"></i></a>
+          </li>
+          {{/if}}
+          {{#if github}}
+          <li><a href="{{github}}"><i class="fa fa-github"></i></a>
+          </li>
+          {{/if}}
+          {{#if googlePlus}}
+          <li><a href="{{googlePlus}}"><i class="fa fa-google-plus"></i></a>
+          </li>
+          {{/if}}
+
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+          {{#with privacy}}
+            {{#if visible}}<li><a href="{{url}}">Privacy Policy</a>
+            </li>
+            {{/if}}
+          {{/with}}
+          {{#with terms}}
+            {{#if visible}}<li><a href="{{url}}">Terms of Use</a>
+            </li>
+            {{/if}}
+          {{/with}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</template>

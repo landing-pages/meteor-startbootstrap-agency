@@ -1,0 +1,83 @@
+<template name="lpStartBootstrapAgencyAboutUs">
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">{{heading}}</h2>
+          <h3 class="section-subheading text-muted">{{subHeading}}</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            {{#each timeline}}
+              {{#if isOdd}}
+                {{> lpStartBootstrapAgencyTimeline doc=this}}
+              {{else}}
+                {{> lpStartBootstrapAgencyTimelineInverted doc=this}}
+              {{/if}}
+            {{/each}}
+            <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4 class="text-center">{{lastWords}}</h4>
+            </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<template name='lpStartBootstrapAgencyTimeline'>
+  {{#with doc}}
+  <li>
+  <div class="timeline-image">
+    {{#if img}}
+      <img class="img-circle img-responsive" src="{{img}}" alt="">
+    {{/if}}
+  </div>
+  <div class="timeline-panel">
+    <div class="timeline-heading">
+      <h4>{{date}}</h4>
+      <h4 class="subheading">{{title}}</h4>
+    </div>
+    <div class="timeline-body">
+      <p class="text-muted">{{content}}</p>
+    </div>
+  </div>
+  </li>
+  {{/with}}
+</template>
+
+<template name="lpStartBootstrapAgencyTimelineInverted">
+  {{#with doc}}
+  <li class="timeline-inverted">
+    <div class="timeline-image">
+      {{#if img}}
+        <img class="img-circle img-responsive" src="{{img}}" alt="">
+      {{/if}}
+    </div>
+    <div class="timeline-panel">
+      <div class="timeline-heading">
+        <h4>{{date}}</h4>
+        <h4 class="subheading">{{title}}</h4>
+      </div>
+      <div class="timeline-body">
+        <p class="text-muted">{{content}}</p>
+      </div>
+    </div>
+  </li>
+  {{/with}}
+</template>
+
+<template name="lpStartBootstrapAgencyTimelineLast">
+  {{#with doc}}
+  <li class="timeline-inverted">
+  <div class="timeline-image">
+    <h4>{{body}}</h4>
+  </div>
+  </li>
+  {{/with}}
+</template>

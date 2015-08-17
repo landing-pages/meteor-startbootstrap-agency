@@ -1,0 +1,15 @@
+<template name="lpStartBootstrapAgencyClients">
+<aside class="clients">
+  <div class="container">
+    <div class="row">
+      {{#each clients}}
+      <div class="{{itemClass}} col-sm-6">
+        <a href="#">
+          <img src="{{imgUrl}}" class="img-responsive img-centered" alt="">
+        </a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</aside>
+</template>

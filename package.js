@@ -15,13 +15,17 @@ Package.onUse(function(api) {
   // Dependencies
   api.use('coffeescript');
   api.use('iron:router');
-  api.use(['templating', 'less', 'twbs:bootstrap', 'fortawesome:fontawesome'], 'client');
+  api.use(['templating', 'less', 'twbs:bootstrap', 'fortawesome:fontawesome', 'mrt:moment'], 'client');
   api.versionsFrom('1.1.0.2');
 
-  //api.export('LandingPageDefault', ['client']);
+  api.export('LandingPageDefault', ['client']);
 
   // add resources
-  api.addFiles(['lib/client/img/header-bg.jpg'], 'client');
+  api.addFiles([
+    'lib/client/img/header-bg.jpg',
+    'lib/client/img/portfolio/startup-framework.png',
+    'lib/client/img/portfolio/roundicons.png'
+    ], 'client');
   api.addFiles(['lib/both/_config/config.coffee']);
 
   // add less files
@@ -34,6 +38,14 @@ Package.onUse(function(api) {
     //add template files
     'lib/client/templates/header.html',
     'lib/client/templates/navbar.html',
+    'lib/client/templates/services.html',
+    'lib/client/templates/portfolio.html',
+    'lib/client/templates/about.html',
+    'lib/client/templates/team.html',
+    'lib/client/templates/clients.html',
+    'lib/client/templates/contact.html',
+    'lib/client/templates/footer.html',
+    'lib/client/templates/modals.html',
     'lib/client/startbootstrap-agency.html',
   ], 'client');
  
