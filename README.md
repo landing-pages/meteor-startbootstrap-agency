@@ -138,6 +138,13 @@ To configure the template, create a LandingPage object. You can alter any of the
 
 ```
 
+The template is divided into different sections: services, portfolio, about, team, client, contact. You can customize the various sections interms of text, and display. 
+
+To prevent a section from not showing, just don't add it to the object. 
+
+All sections have their corresponding navbar items. to prevent a section from being added to the navbar, don't add it to the section.
+
+
 **Example 1**
 
 ```coffeescript
