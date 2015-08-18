@@ -137,3 +137,23 @@ To configure the template, create a LandingPage object. You can alter any of the
       url: '#'
 
 ```
+
+**Example 1**
+
+```coffeescript
+###
+This configuration creates the header with the custom text and image with the footer having my facebook and twitter link
+###
+@LandingPage =
+  backgroundImage: '/img/background.png'
+  appName: 'My App'
+  intro:
+    leadIn: 'Ever thought about getting your own server?'
+    button:
+      buttonText: 'Get Started'
+      buttonUrl: '/sign-in'
+  footer:
+    social:
+      facebook: 'https://www.facebook.com/samuel.amoah.509'
+      twitter: 'https://www.twitter/snamoah'
+```
