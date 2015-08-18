@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'landing-page:startbootstrap-agency',
+  name: 'landing-pages:startbootstrap-agency',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: 'Startbootstrap-agency landing page template for meteor',
