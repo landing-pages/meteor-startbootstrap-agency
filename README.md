@@ -22,7 +22,7 @@ To configure the template, create a LandingPage object. You can alter any of the
   appName: "Start Bootstrap"
   #backgroundImage: '/img/background-intro.jpg'
   intro:
-    leadIn: 'Welcome to our Studio!'
+    leadIn: ""      # cursive text on the header
     heading: "it's nice to meet you"
     button:
       buttonText: "tell me more"
