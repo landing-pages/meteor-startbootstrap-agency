@@ -20,7 +20,13 @@
             {{/each}}
             <li class="timeline-inverted">
             <div class="timeline-image">
-              <h4 class="text-center">{{lastWords}}</h4>
+              <h4 class="text-center">
+                {{#unless lastwords}}
+                Be part<br> of<br>our story
+                {{else}}
+                  {{lastWords}}
+                {{/unless}}
+              </h4>
             </div>
             </li>
           </ul>

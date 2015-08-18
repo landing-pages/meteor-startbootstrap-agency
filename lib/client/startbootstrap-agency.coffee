@@ -111,10 +111,19 @@ Template.lpStartBootstrapAgencyPortfolio.helpers
     parseText 'sections.portfolio.works'
   itemClass: ->
     w = parseText("sections.portfolio.works").length
-    w = if w <= 3 then (12 / w) else 4
+    w = if w <= 3 then w else 3
     n = parseText("sections.portfolio.noOfColumns") || w
-    "col-md-#{n}"
+    "col-md-#{12/n}"
 
+Template.lpStartBootstrapAgencyPortfolio.events
+  'click .portfolio-link': (e, t) ->
+    Session.set 'lpsbapProjectName', @name
+    Session.set 'lpsbapClient', @client
+    Session.set 'lpsbapTagline', @tagline
+    Session.set 'lpsbapDescription', @description
+    Session.set 'lpsbapImg', @img
+    Session.set 'lpsbapDate', @date
+    Session.set 'lpsbapCategory', @category
 #
 #
 # About Template helpers
@@ -198,3 +207,19 @@ Template.lpStartBootstrapAgencyFooter.helpers
     parseText 'footer.privacy'
   terms: ->
     parseText 'footer.terms'
+
+Template.lpStartBootstrapAgencyModals.helpers
+  projectName: ->
+    Session.get 'lpsbapProjectName'
+  tagline: ->
+    Session.get 'lpsbapTagline'
+  description: ->
+    Session.get 'lpsbapDescription'
+  date: ->
+    Session.get 'lpsbapDate'
+  client: ->
+    Session.get 'lpsbapClient'
+  category: ->
+    Session.get 'lpsbapCategory'
+  img: ->
+    Session.get 'lpsbapImg'

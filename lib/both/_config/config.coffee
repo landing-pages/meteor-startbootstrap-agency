@@ -30,6 +30,7 @@ config =
       navName: 'portfolio'
       visible: true
       heading: 'Portfolio'
+     # noOfColumns: 4
       subHeading: 'Lorem ipsum dolor sit amet consectetur.'
       works: [
         { name: 'Project Name', client: 'Round Icons', category: 'Graphic Design', tagline: 'Lorem ipsum dolor sit amet consectetur.', description: 'Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!', date: 'July 2014', img: '/packages/landing-page_startbootstrap-agency/lib/client/img/portfolio/roundicons.png'}
@@ -56,7 +57,7 @@ config =
         { date: 'December 2012', title: 'Transition to Full Service', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!', img: '/packages/landing-page_startbootstrap-agency/lib/client/img/about/3.jpg'}
         { date: 'July 2014', title: 'Phase Two Expansion', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!', img: '/packages/landing-page_startbootstrap-agency/lib/client/img/about/4.jpg'}
       ]
-      lastWords: "Be Part Of Our Story!"
+
 
     #
     #
