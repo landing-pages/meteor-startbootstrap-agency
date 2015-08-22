@@ -20,13 +20,13 @@ To configure the template, create a LandingPage object. You can alter any of the
 
 @LandingPage =
   appName: "Start Bootstrap"
-  #backgroundImage: '/img/background-intro.jpg'
+  backgroundImage: '' # set background image for header
   intro:
-    leadIn: ""      # cursive text on the header
-    heading: "it's nice to meet you"
+    leadIn: "welcome to our studio!"      # cursive text on the header
+    heading: "it's nice to meet you"      # main header text
     button:
-      buttonText: "tell me more"
-      buttonUrl: "#services"
+      buttonText: "tell me more"        # button properties
+      buttonUrl: "#services"          # action url on button click
 
   sections:
     #
