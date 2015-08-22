@@ -1,6 +1,6 @@
 Package.describe({
-  name: 'landing-pages:startbootstrap-agency',
-  version: '0.0.1',
+  name: 'landingpages:startbootstrap-agency',
+  version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: 'Startbootstrap-agency landing page template for meteor',
   // URL to the Git repository containing the source code for this package.
@@ -13,12 +13,13 @@ Package.describe({
 Package.onUse(function(api) {
 
   // Dependencies
-  api.use('coffeescript');
-  api.use('iron:router');
-  api.use(['templating', 'less', 'twbs:bootstrap', 'fortawesome:fontawesome', 'mrt:moment'], 'client');
+  api.use('coffeescript@1.0.6');
+  api.use('iron:router@1.0.9');
+  api.use(['templating', 'less', 'twbs:bootstrap@3.3.5', 'fortawesome:fontawesome@4.4.0', 'mrt:moment@2.1.0'], 'client');
+  api.use('erasaur:meteor-lodash@0.1.0');
   api.versionsFrom('1.1.0.2');
 
-  api.export('LandingPageDefault', ['client']);
+  //api.export('LandingPageDefault', ['client']);
 
   // add resources
   api.addFiles([
@@ -89,5 +90,5 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('landing-page:startbootstrap-agency');
+  api.use('landingpages:startbootstrap-agency');
 });

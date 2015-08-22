@@ -116,4 +116,4 @@ config =
     terms:
       visible: true
       url: '#'
-LandingPageDefault = LandingPageDefault || config
+@LandingPageDefault = config
